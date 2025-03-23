@@ -1,1 +1,42 @@
 # CypressFrameworkTS
+
+### Summary
+
+CypressFrameworkTS is a project for automated testing of the https://telnyx.com/ website, created using the Cypress framework.
+
+### Requirements
+
+Node.js,
+npm,
+Cypress,
+Git
+
+### Steps to install
+
+1.  Clone the repository:
+
+        git clone https://github.com/mafka0903/CypressFrameworkTS.git
+
+2.  Navigate to the project folder:
+
+        cd CypressFrameworl
+
+3.  Install dependencies:
+
+        npm install
+
+### Steps to launch
+
+1.  Run all tests:
+
+        npx cypress run
+
+2.  Run tests in headed mode:
+
+        npx cypress run --headed
+
+3.  Open Cypress Launchpad:
+
+        npx cypress open
+
+### Generating Report
