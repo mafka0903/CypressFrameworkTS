@@ -1,3 +1,5 @@
+import { testData } from "../fixtures/data.fixtures";
+
 class contactUsPage {
   elements = {
     reasonForContact: () => cy.get("div #Reason_for_Contact__c"),
@@ -13,38 +15,42 @@ class contactUsPage {
   };
 
   selectSalesInquiry() {
-    this.elements.reasonForContact().select("Support");
+    this.elements.reasonForContact().select(testData.Dropdown.reasonForContact);
   }
 
   typeFirstName() {
-    this.elements.firstName().type("John");
+    this.elements.firstName().type(testData.DataForContactUs.firstName);
   }
 
   typeLasttName() {
-    this.elements.lastName().type("Smit");
+    this.elements.lastName().type(testData.DataForContactUs.lastName);
   }
 
   typeBusinessEmail() {
-    this.elements.businessEmail().type("john.smit@example.com");
+    this.elements.businessEmail().type(testData.DataForContactUs.businessEmail);
   }
 
   selectCountry() {
-    this.elements.phoneCode().select("United Kingdom (+44)");
+    this.elements.phoneCode().select(testData.Dropdown.phoneCode);
   }
 
   typePhoneNumber() {
-    this.elements.phoneNumber().type("01234567");
+    this.elements.phoneNumber().type(testData.DataForContactUs.phoneNumber);
   }
 
   typeCompanyWebsite() {
-    this.elements.companyWebsite().type("https://example.com");
+    this.elements
+      .companyWebsite()
+      .type(testData.DataForContactUs.companyWebsite);
   }
 
   typeRequestDescribe() {
-    this.elements.requestDescribe().type("Problems with adding new users");
+    this.elements
+      .requestDescribe()
+      .type(testData.DataForContactUs.requestDescribe);
   }
   typeHowHearAbout() {
-    this.elements.howHearAbout().type("On the recommendation");
+    this.elements.howHearAbout().type(testData.DataForContactUs.howHearAbout);
   }
 
   clickSubmitButton() {

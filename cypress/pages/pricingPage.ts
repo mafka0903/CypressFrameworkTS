@@ -1,3 +1,5 @@
+import { testData } from "../fixtures/data.fixtures";
+
 class pricingPage {
   elements = {
     communications: () => cy.get(".c-PJLV.c-ihLeEO.c-PJLV-cHtIMp-dark-false"),
@@ -5,6 +7,8 @@ class pricingPage {
     downloadLastName: () => cy.get("#LastName"),
     downloadBussinessEmail: () => cy.get("#Email"),
     downloadSubmitButton: () => cy.get("span .mktoButton"),
+    messageSuccesfulDownload: () =>
+      cy.get(".c-PJLV.c-PJLV-kmbBBS-dark-true.c-PJLV-ghYBfS-lead-true"),
   };
 
   clickMessagingAPI() {
@@ -12,15 +16,17 @@ class pricingPage {
   }
 
   typeDownloadFirstName() {
-    this.elements.downloadFirstName().type("John");
+    this.elements.downloadFirstName().type(testData.DataForContactUs.firstName);
   }
 
   typeDownloadLastName() {
-    this.elements.downloadLastName().type("Smit");
+    this.elements.downloadLastName().type(testData.DataForContactUs.lastName);
   }
 
   typeDownloadBussinessEmail() {
-    this.elements.downloadBussinessEmail().type("john.smit@example.com");
+    this.elements
+      .downloadBussinessEmail()
+      .type(testData.DataForContactUs.businessEmail);
   }
 
   clickDownlosdSubmitButton() {

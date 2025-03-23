@@ -11,6 +11,13 @@ class homePage {
 
     sotialTable: () => cy.get("ul.c-ejcPbY"),
     footerSocial: () => cy.get(".c-ejcPbY .c-tKuzq.mchNoDecorate"),
+
+    messageSuccessfulSend: () =>
+      cy.get(
+        ".c-buvHyO.c-buvHyO-ijVfhdt-css.c-PJLV.c-PJLV-jWMPpM-centered-true"
+      ),
+    messageEmptyField: () =>
+      cy.get("#ValidMsgHow_did_you_hear_about_Telnyx_Open__c"),
   };
 
   clickProducts() {

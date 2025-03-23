@@ -1,8 +1,9 @@
+import { testData, urls } from "../../fixtures/data.fixtures";
 import shopPage from "../../pages/shopPage";
 
 describe("shop page actions", () => {
   beforeEach(() => {
-    cy.visit("https://shop.telnyx.com/");
+    cy.visit(urls.shopPage);
   });
   it("checking the search function", () => {
     shopPage.clickSearchIcon();
@@ -11,7 +12,7 @@ describe("shop page actions", () => {
     shopPage.clickSearchFieldButton();
     shopPage.elements
       .productNameCard()
-      .should("contain.text", "Telnyx Classic Hat");
+      .should("contain.text", testData.Products.telnyxHat);
   });
 
   it("checking that user has the ability to add a product to the cart", () => {
