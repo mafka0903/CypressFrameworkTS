@@ -33,6 +33,7 @@ jobs:
 
   deploy-report:
     needs: cypress-run
+    if: always()
     runs-on: ubuntu-latest
     permissions:
       contents: write
