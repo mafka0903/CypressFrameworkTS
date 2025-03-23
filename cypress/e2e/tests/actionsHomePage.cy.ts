@@ -28,7 +28,10 @@ describe("home page actions", () => {
   });
 
   it("checking that the contact form is sent successfully when all required fields are filled in", () => {
-    homePage.elements.headerOptions().should("be.visible", { timeout: 15000 });
+    homePage.elements
+      .headerOptions()
+      .should("exist")
+      .should("be.visible", { timeout: 15000 });
     homePage.clickContactUs();
     cy.wait(5000);
     contactUsPage.selectSalesInquiry();
@@ -41,7 +44,10 @@ describe("home page actions", () => {
     contactUsPage.typeRequestDescribe();
     contactUsPage.typeHowHearAbout();
     contactUsPage.clickSubmitButton();
-    homePage.elements.messageSuccessfulSend().should("be.visible");
+    homePage.elements
+      .messageSuccessfulSend()
+      .should("exist")
+      .should("be.visible");
   });
 
   it("checking that the contact form is sent successfully when all required fields are filled in", () => {

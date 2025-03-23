@@ -7,5 +7,5 @@
     "esModuleInterop": true,
     "strict": true
   },
-  "include": ["src/**/*.ts", "cypress/**/*.ts"]
+  "include": ["e2e/**/*.ts", "cypress/**/*.ts"]
 }
