@@ -21,9 +21,11 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests with Allure
-        run: |
-          npx cypress run --env allure=true
-          npx allure generate allure-results --clean -o allure-report
+        run: npx cypress run --env allure=true
+
+      - name: Run generate Allure
+        if: always()
+        run: npx allure generate allure-results --clean -o allure-report
 
       - name: Upload Allure results
         if: always()
