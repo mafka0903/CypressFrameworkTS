@@ -15,7 +15,7 @@ describe("home page actions", () => {
       .should("have.text", testData.ExpectedText.upperText);
   });
 
-  it.only("verify that clicking on a menu option with a dropdown correctly displays a list of available sub-options", () => {
+  it("verify that clicking on a menu option with a dropdown correctly displays a list of available sub-options", () => {
     homePage.clickProducts();
     homePage.elements.dropdownProducts().should("be.visible");
   });
