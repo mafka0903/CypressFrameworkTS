@@ -5,7 +5,7 @@ import { testData, urls } from "../../fixtures/data.fixtures";
 
 describe("home page actions", () => {
   beforeEach(() => {
-    cy.visit(urls.homePage);
+    cy.visit("");
   });
   it("checking the opening of the main page", () => {
     cy.wait(15000);

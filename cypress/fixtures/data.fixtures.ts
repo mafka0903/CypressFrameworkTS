@@ -24,7 +24,6 @@ export const testData = {
 };
 
 export const urls = {
-  homePage: "https://telnyx.com",
   pricingPage: "https://telnyx.com/pricing",
   shopPage: "https://shop.telnyx.com",
   linkedinTelnyx: "https://www.linkedin.com/company/telnyx/",

@@ -5,6 +5,7 @@ import { allureCypress } from "allure-cypress/reporter";
 export default defineConfig({
   video: false,
   e2e: {
+    baseUrl: "https://telnyx.com",
     retries: 3,
     viewportWidth: 1920,
     viewportHeight: 1080,

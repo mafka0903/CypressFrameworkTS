@@ -39,4 +39,14 @@ Git
 
         npx cypress open
 
-### Generating Report
+### Generating Allure Report
+
+        npx cypress run --browser chrome --env allure=true
+
+        npx allure generate allure-results --clean -o allure-report
+
+Open report in browser:
+
+        npx allure open allure-report
+
+Reports also avaliable on GitHub pages https://mafka0903.github.io/CypressFrameworkTS/
