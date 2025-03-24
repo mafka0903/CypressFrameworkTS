@@ -5,7 +5,7 @@ export const testData = {
     firstName: faker.person.firstName(),
     lastName: faker.person.lastName(),
     businessEmail: faker.internet.email(),
-    phoneNumber: faker.phone.number({ style: "national" }),
+    phoneNumber: faker.number.int({ min: 8, max: 8 }),
     companyWebsite: faker.internet.url(),
     requestDescribe: faker.string.sample(),
     howHearAbout: faker.string.sample(),
