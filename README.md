@@ -4,6 +4,9 @@
 
 CypressFrameworkTS is a project for automated testing of the https://telnyx.com/ website, created using the Cypress framework.
 
+Links to test cases
+https://docs.google.com/spreadsheets/d/12FflRubenA8S0fRCk16NQL79qIuf5LJbfKqKpit1dFk/edit?usp=sharing
+
 ### Requirements
 
 Node.js,
