@@ -3,6 +3,7 @@ import { defineConfig } from "cypress";
 import { allureCypress } from "allure-cypress/reporter";
 
 export default defineConfig({
+  video: false,
   e2e: {
     retries: 3,
     viewportWidth: 1920,

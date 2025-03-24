@@ -11,7 +11,7 @@ class contactUsPage {
     companyWebsite: () => cy.get("#Website"),
     requestDescribe: () => cy.get("#LblForm_Additional_Information__c"),
     howHearAbout: () => cy.get("#How_did_you_hear_about_Telnyx_Open__c"),
-    submitButton: () => cy.get("span .mktoButton"),
+    submitButton: () => cy.get('button[type="submit"]'),
   };
 
   selectSalesInquiry() {
@@ -54,7 +54,7 @@ class contactUsPage {
   }
 
   clickSubmitButton() {
-    this.elements.submitButton().click();
+    this.elements.submitButton().scrollIntoView().click();
   }
 }
 

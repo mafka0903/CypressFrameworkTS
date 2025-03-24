@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests with Allure
-        run: npx cypress run --env allure=true
+        run: npx cypress run --browser chrome --env allure=true
 
       - name: Run generate Allure
         if: always()
