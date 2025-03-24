@@ -1,1 +1,1 @@
-{"total":2,"items":[{"uid":"049c839b7d9fe9edcfb75582c4eeeb7c","name":"home page actions","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}},{"uid":"ccfb1e10115f52293e56a59c0eee4d8d","name":"shop page actions","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
+{"total":1,"items":[{"uid":"049c839b7d9fe9edcfb75582c4eeeb7c","name":"home page actions","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}}]}
